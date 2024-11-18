@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel de Mello Cagnani - Página Inicial</title>
+    <style>
+        /* Estilos Gerais */
+        * {
+            margin: 0; /* Remove margens padrão */
+            padding: 0; /* Remove preenchimento padrão */
+            box-sizing: border-box; /* Inclui padding e border nas dimensões definidas */
+            font-family: Arial, sans-serif; /* Define fonte padrão */
+        }
+
+        body {
+            display: flex; /* Permite organizar elementos em linha ou coluna */
+            flex-direction: column; /* Alinha elementos em coluna */
+            align-items: center; /* Centraliza elementos horizontalmente */
+            background-color: #f4f4f4; /* Define cor de fundo da página */
+        }
+
+        /* Navegação */
+        nav {
+            background-color: #fff; /* Fundo branco para a barra de navegação */
+            width: 100%; /* Ocupa toda a largura da página */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para destacar a barra */
+            margin-bottom: 30px; /* Espaço abaixo da navegação */
+        }
+
+        nav ul {
+            display: flex; /* Alinha itens da lista em linha */
+            justify-content: center; /* Centraliza itens horizontalmente */
+            padding: 30px 20px; /* Espaço acima e abaixo dos itens */
+            list-style: none; /* Remove marcadores da lista */
+        }
+
+        nav ul li {
+            margin: 0 10px; /* Espaço horizontal entre itens */
+        }
+
+        nav ul li a {
+            text-decoration: none; /* Remove sublinhado dos links */
+            color: #333; /* Cor cinza escuro para o texto */
+            font-weight: bold; /* Negrito nos links */
+            padding: 10px 20px; /* Espaço ao redor dos links */
+            transition: color 0.3s; /* Transição suave de cor */
+        }
+
+        nav ul li a:hover {
+            color: #007BFF; /* Cor azul ao passar o mouse */
+        }
+
+        /* Seção Principal (Hero Section) */
+        .hero-section {
+            background-color: #fff; /* Fundo branco da seção */
+            width: 80%; /* Largura de 80% da página */
+            max-width: 1200px; /* Largura máxima de 1200px */
+            padding: 40px; /* Espaço ao redor do conteúdo */
+            display: flex; /* Flexbox para organizar o conteúdo */
+            align-items: center; /* Centraliza verticalmente os itens */
+            justify-content: space-between; /* Espaço entre texto e imagem */
+            border-radius: 8px; /* Cantos arredondados */
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra ao redor da seção */
+        }
+
+        .hero-text {
+            max-width: 500px; /* Limita largura do texto */
+        }
+
+        .hero-text h1 {
+            font-size: 2.5em; /* Tamanho grande para o título */
+            color: #007BFF; /* Cor azul para destaque */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+
+        .hero-text p {
+            font-size: 1.1em; /* Tamanho ligeiramente maior para leitura confortável */
+            color: #555; /* Cor cinza médio */
+            line-height: 1.6; /* Espaçamento entre linhas */
+            margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+        }
+
+        .btn {
+            display: inline-block; /* Permite margem e padding personalizados */
+            padding: 12px 24px; /* Espaço ao redor do texto do botão */
+            background-color: #007BFF; /* Fundo azul do botão */
+            color: #fff; /* Texto branco */
+            border-radius: 5px; /* Cantos arredondados */
+            text-decoration: none; /* Remove sublinhado do botão */
+            font-weight: bold; /* Texto em negrito */
+            transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Fundo azul escuro ao passar o mouse */
+        }
+
+        .hero-image img {
+            width: 400px; /* Define largura da imagem */
+            height: auto; /* Ajusta altura para manter proporção */
+            border-radius: 10px; /* Cantos arredondados da imagem */
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./src/colegios.html">Colégios</a></li>
+            <li><a href="./src/sites_favoritos.html">Sites Favoritos</a></li>
+            <li><a href="./src/horario_de_aulas.html">Horário das Aulas</a></li>
+            <li><a href="./src/contato.html">Contato</a></li>
+            <li><a href="./src/instituto_federal.html">Instituto Federal</a></li>
+            <li><a href="./src/curso_superior_eng_comp.html">Engenharia de Computação</a></li>
+            <li><a href="./src/formacao_academica.html">Formação Acadêmica</a></li>
+            <li><a href="./src/atividades_culturais.html">Atividades Culturais</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Seção Principal -->
+    <section class="hero-section">
+        <div class="hero-text">
+            <h1>Explorando o Mundo</h1>
+            <p>Descubra os melhores pacotes de viagens para explorar o mundo com conforto e segurança. Aventure-se e crie memórias inesquecíveis.</p>
+            <a href="#" class="btn">Saiba Mais</a>
+        </div>
+        <div class="hero-image">
+            <img src="./img/foto_pessoal.jpg" alt="Imagem Pessoal - Samuel de Mello Cagnani">
+        </div>
+    </section>
+</body>
+</html>
